@@ -20,7 +20,7 @@ app.use(cors({
 })); 
 console.log(process.env.FRONTEND_URL);
 
-app.use('/api', urlRoutes);
+app.use('/', urlRoutes);
 
 app.use(express.static('public'));
 
