@@ -18,6 +18,7 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 })); 
+console.log(process.env.FRONTEND_URL);
 
 app.use('/api', urlRoutes);
 

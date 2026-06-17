@@ -16,7 +16,7 @@ function App() {
       return;
     }
     try {
-      const res = await axios.post(`${BACKEND_URI}/shorten`, {
+      const res = await axios.post(`${BACKEND_URI}/api/shorten`, {
         originalUrl: url,
       });
 
